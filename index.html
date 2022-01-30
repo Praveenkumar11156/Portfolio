@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="logo.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Praveen Kumar</span>
+                    <span class="profession">Web developer</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">About Us</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-pie-chart-alt-2 icon'></i>
+                            <span class="text nav-text">Skills</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-briefcase icon' ></i>
+                            <span class="text nav-text">Works</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-contact icon'></i>
+                            <span class="text nav-text">Contact</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home bd_grid" id="home">
+        <div class="detel">
+            <h1>I,M <span>PRAVEEN KUMAR</span></h1>
+            <p>This is my official Portfolio website <br>to showcase my 
+                all works related to <br> web development and ui design. </p>
+            <a href="#">Downdload CV</a>
+        </div>
+        <div class="images">
+            <img src="images/shape.png" class="shape">
+            <img src="images/girl.png" class="girl">
+        </div>
+                  
+    </section>
+
+    <section class="about">
+        <div class="content">
+            <img src="images/about3.png">
+            <div class="text">
+                <h2> About Us</h2>
+                <h5> Developer & Design</h5>
+                <p> I am a Full Stack Developer. I can provide a clean code and pixel perfect design. 
+                    I also make the website more & more interactive with web animations.
+                    A responsive designs make your websites accessible to all users, redardless of their devices.
+
+                </p>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="skills">
+        
+        <div class="wrapper">
+            <h2 class="section-title">Skills</h2>
+            <div class="skill_icons">
+                <box-icon name='paint' animation='tada' ></box-icon>
+                <i class='bx bx-paint bx-tada ' ></i>
+                <h3 class="design"> Design + Development</h3>
+                <p> Clean, mordern design - optimized for performance, search engines,<br> and converting users to costomers.</p><br>
+
+                <box-icon name='code-alt'></box-icon>
+                <i class='bx bx-code-alt bx-spin' ></i>
+                <h3 class="design"> Technology </h3>
+                <p> Combined all the Latest technologies to a progressive websites.</p><br>
+
+                <box-icon name='devices' type='solid' animation='burst' ></box-icon>
+                <i class='bx bxs-devices bx-burst' ></i>
+                <h3 class="design"> Always Responsive</h3>
+                <p> A responsive design makes your websites accessible to all users, regardless of their devices.</p><br>
+            </div>
+            <div class="card">
+              <div class="circle">
+                <div class="bar"></div>
+                <div class="box"><span></span></div>
+              </div>
+              <div class="text">HTML & CSS</div>
+            </div>
+            <div class="card js">
+              <div class="circle">
+                <div class="bar"></div>
+                <div class="box"><span></span></div>
+              </div>
+              <div class="text">JavaScript</div>
+            </div>
+            <div class="card react">
+              <div class="circle">
+                <div class="bar"></div>
+                <div class="box"><span></span></div>
+              </div>
+              <div class="text">React JS</div>
+            </div>     
+        </div>
+      
+
+    </section><br><br><br><br>
+
+    <h2 class="section-title">Work</h2>
+    <section class="container">
+
+        <div class="workcard">
+            <div class="card-image minion"></div>
+            <h3>Eye Ball Movement</h3>
+            <p> This is an making this cute minion eyes follow your mouse! We will use JavaScript to make the eyes of this CSS minion pupil follow where ever your mouse goes. </p>
+            <a href=""> View Output </a>
+        </div>
+        <div class="workcard">
+            <div class="card-image pacman"></div>
+            <h3>Pac-Man</h3>
+            <p> This is an creating a image Random position and moving that image in our Deskdop innerwidth. </p>
+            <a href=""> View Output </a>
+        </div>
+        <div class="workcard">
+            <div class="card-image randomball"></div>
+            <h3>Randomball</h3>
+            <p> Balls bouncing in a circle. This simulation outlines how chaos emerges from a simple ball bouncing around in a Rectangle box. </p>
+            <a href=""> View Output </a>
+        </div>
+        <div class="workcard">
+            <div class="card-image stops"></div>
+            <h3>Bus Stops</h3>
+            <p> In this activity, I,ll be using the TNSTC bus data to determine stops between Tiruppur Old Bus Stand to RVS College. Then, I'll add an animated marker on the map to highlight the bus routes. </p>
+            <a href=""> View Output </a>
+        </div>
+     
+    </section>
+
+    <!--<section class="contact">
+        <div class="contact-content">
+            <h2> Contact Us </h2>
+            <p>If you have any Questions, please feel free to drop me a line. If you don't get an answer immeditely. I might Just Travelling through the middle of nowhere. I'll get back to you as soon as I can. That's a Promise!..</p>
+
+        </div>
+        <div class="contact-container">
+            <div class="contentInfo">
+                <div class="box">
+                    <div class="contact-icon"><box-icon name='map' animation='tada' ></box-icon> <i class='bx bxs-map'></i></div>
+                    <div class="contact-text">
+                        <h3> Address </h3>
+                        <p> 1,Selvalakshmi Nagar,<br>M.S Nagar,<br>Tiruppur - 641607</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="contact-icon"><i class='bx bxs-contact'></i>
+                        
+                    </div>
+                    <div class="contact-text">
+                        <h3> Phone </h3>
+                        <p> 9894482692</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="contact-icon"><box-icon type='logo' name='gmail'></box-icon>
+                        <i class='bx bxl-gmail'></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3> Email </h3>
+                        <p> praveen11156@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contactForm">
+                <form>
+                    <h2> Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span> Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span> Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span> Type a Message....</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span> Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                       <input type="submit" name="" value="Send"
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section> -->
+    <section class="contact" >
+        <h2>Contact</h2>
+        <div class="contactus">
+            <div class="title">
+                <p>If you have any Questions, please feel free to drop me a line. If you don't get an answer immeditely. I might Just Travelling through the middle of nowhere. I'll get back to you as soon as I can. That's a Promise!..</p>
+            </div>
+            <div class="boxes">
+                <div class="contacts form">
+                    <h3> Send a Message</h3>
+                    <form>
+                        <div class="formBox">
+                            <div class="row50">
+                                <div class="inputBox">
+                                    <span>First Name</span>
+                                    <input type="text" placeholder="ex(Praveen)">
+                                </div>
+                                <div class="inputBox">
+                                    <span>Last Name</span>
+                                    <input type="text" placeholder="ex(Kumar)">
+                                </div>
+                            </div>
+                            <div class="row50">
+                                <div class="inputBox">
+                                    <span>Email</span>
+                                    <input type="text" placeholder="ex(praveen1@gmail.com)">
+                                </div>
+                                <div class="inputBox">
+                                    <span>Mobile</span>
+                                    <input type="text" placeholder="ex(+91 98989 89898)">
+                                </div>
+                            </div>
+                            <div class="row100">
+                                <div class="inputBox">
+                                    <span>Message</span>
+                                    <textarea placeholder="Write your message here..."></textarea>
+                                </div>
+                            </div>
+                            <div class="row100">
+                                <div class="inputBox">
+                                    <input type="submit" value="Send">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="contacts info">
+                    <h3> Contact Info</h3>
+                    <div class="infoBox">
+                        <div>
+                            <span><box-icon name='map' animation='tada' ></box-icon> <i class='bx bx-map bx-tada' ></i></span>
+                            <p>1, Selvalakshmi Nagar,<br> M.S Nagar, Tirupur<br>Pin Code - 641607<br> India </p>
+                        </div>
+                        <div>
+                            <span> <box-icon name='gmail' type='logo' animation='flashing' ></box-icon> <i class='bx bxl-gmail bx-flashing' ></i></span>
+                            <a href="mailto:praveen11156@gmail.com">praveen11156@gmail.com</a>
+                        </div>
+                        <div>
+                            <span> <box-icon name='phone-call' type='solid' animation='tada' ></box-icon> <i class='bx bxs-phone-call bx-tada' ></i></span>
+                            <a href="tel:+91 9894482692">+91 9894482692</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="contacts map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125281.99028144003!2d77.29377163820699!3d11.108742609387555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba907b0424d75b9%3A0x4750551698a91687!2sTiruppur%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1643389913792!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h3> Praveen Kumar</h3>
+            <p>Full Stack Developer</p>
+            <ul class="socials">
+                <li> <a href="https://www.linkedin.com/in/praveen-kumar-04a16b221"> <i class='bx bxl-linkedin'></i></a></li>
+                <li> <a href="https://github.com/Praveenkumar11156"> <i class='bx bxl-github' ></i></a></li>
+                <li> <a href="https://twitter.com/praveen13108566=09"> <i class='bx bxl-twitter' ></i></a></li>
+                <li> <a href="#"> <i class='bx bxl-youtube' ></i></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p> Copyright &copy;2022 github. designed by <span>PRAVEEN</span></p>
+        </div>
+    </footer>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
