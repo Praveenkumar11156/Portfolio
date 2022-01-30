@@ -630,6 +630,14 @@ span{
       transform: scale(1.03);
       transition: all is ease;
   }
+ @media screen and (max-width:750px){
+      .container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 50px;
+      }
+  }
 
  /* .contact{
       position: relative;
