@@ -58,7 +58,14 @@ body.dark{
 .sidebar.close{
     width: 88px;
 }
-
+@media screen and (max-width:650px){
+    .sidebar.close{
+        width: 50px;
+    }
+    .sidebar{
+        padding: 0;
+    }
+}
 /* ===== Reusable code - Here ===== */
 .sidebar li{
     height: 50px;
@@ -98,6 +105,11 @@ body.dark{
 }
 .sidebar.close .text{
     opacity: 0;
+}
+@media screen and (max-width:650px){
+    .sidebar.close .text{
+        opacity: 0;
+    }
 }
 /* =========================== */
 
@@ -161,10 +173,15 @@ body.dark .sidebar header .toggle{
 .sidebar.close .toggle{
     transform: translateY(-50%) rotate(0deg);
 }
-
+@media screen and (max-width:650px){
+    .sidebar.close .toggle{
+        transform: translateY(-50%) rotate(0deg);
+    }
+}
 .sidebar .menu{
     margin-top: 40px;
 }
+
 
 .sidebar li.search-box{
     border-radius: 6px;
@@ -217,6 +234,12 @@ body.dark .sidebar li a:hover .text{
     justify-content: space-between;
     overflow-y: scroll;
 }
+@media screen and (max-width:650px){
+    .sidebar .menu-bar{
+        overflow-y: auto;
+    }
+}
+
 .menu-bar::-webkit-scrollbar{
     display: none;
 }
@@ -308,6 +331,13 @@ body.dark .switch::before{
     height: 100vh;
     width: calc(100% - 78px);
 }
+@media screen and (max-width:650px){
+    .sidebar.close ~ .home{
+        left: 78px;
+        height: 100vh;
+        width: calc(100% - 78px);
+    }
+}
 body.dark .home .text{
     color: var(--text-color);
 }
@@ -372,6 +402,11 @@ span{
     .images{
         width: 10%;
         height: 50%;
+    }
+    .images img{
+        height: 300px;
+        left: 0;
+        padding-right: 10px;
     }
 }
 
@@ -439,19 +474,19 @@ span{
     letter-spacing: 1px;
     margin-bottom: 45px;
 }
-@media screen and (max-width:1180px){
+@media screen and (max-width:650px){
     .about{
         
         width: 100%;
-        height: auto;
-        padding: 400px 0px;
         padding-left: 100px;
         margin-top: 300px;
     }
 }
 @media screen and (max-width:650px){
     .about .content img{
-        margin-bottom: 35px;
+        margin-bottom: 100px;
+        padding-top: 200px;
+        padding-left: inherit;
     }
     
 }
@@ -461,9 +496,14 @@ span{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding-top: 350px;
-
+    padding-top: 250px;
  
+}
+@media screen and (max-width:750px) {
+    .skills{
+        padding-top: 700px;
+        padding-right: 20px;
+    }
 }
 
 .skills h2{
@@ -549,16 +589,19 @@ span{
     }  
     .wrapper{
       max-width: 700px;
-      padding-left: 170px;
+      padding-left: 100px;
     }
     .wrapper .card{
       width: calc(50% - 20px);
       margin-bottom: 20px;
     }
+    .card{
+        padding: 0;
+    }
   }
   @media(max-width: 505px){
     .wrapper{
-      max-width: 500px;
+      max-width: 400px;
     }
     .wrapper .card{
       width: 100%;
@@ -630,13 +673,16 @@ span{
       transform: scale(1.03);
       transition: all is ease;
   }
- @media screen and (max-width:750px){
+  @media screen and (max-width:750px){
       .container{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         padding: 50px;
+        text-align: center;
+        padding-right: inherit;
       }
+      
   }
 
  /* .contact{
@@ -837,15 +883,16 @@ span{
     height: 100%;
 }
 
-@media (max-width:991px) {
+@media (max-width:768px) {
     .contact{
         background: #03a9f5;
+        padding-left: 80px;
     }
     .contactus{
-        padding: 20px;
+        padding: 10px;
     }
     .contactus .title{
-        padding-left: 50px;
+        padding-left: 30px;
     }
     .boxes{
         grid-template-columns: 1fr;
@@ -854,6 +901,7 @@ span{
             "form"
             "info"
             "map";
+        display: block;    
     }
     .formBox .row50{
         display: flex;
@@ -864,10 +912,10 @@ span{
         width: 100%;
     }
     .contacts{
-        padding: 30px;
+        padding: 10px;
     }
     .map{
-        min-height: 300px;
+        min-height: 150px;
         padding: 0;
     }
 }
@@ -875,9 +923,9 @@ span{
 footer{
     background: #111;
     height: auto;
-    width: 100vw;
+    width: 99vw;
     font-family: Open sans-serif;
-    padding-top: 40px;
+    padding-top: 10px;
     color: #fff;
 }
 .footer-content{
@@ -904,7 +952,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0 3rem 0;
+    margin: 1rem 0 1rem 0;
 }
 .socials li{
     margin: 0 10px;
@@ -922,7 +970,7 @@ footer{
 }
 .footer-bottom{
     background: #000;
-    width: 100vw;
+    width: 99vw;
     padding: 20px 0;
     text-align: center;
 }
@@ -935,4 +983,14 @@ footer{
     text-transform: uppercase;
     opacity: .4;
     font-weight: 200;
+}
+
+@media (max-width:768px){
+    
+    .footer-bottom p{
+        font-size: 14px;
+        word-spacing: 2px;
+        text-transform: capitalize;
+        text-align: end;
+    }
 }
