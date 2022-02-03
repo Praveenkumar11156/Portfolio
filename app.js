@@ -5,6 +5,17 @@ searchBtn = body.querySelector(".search-box"),
 modeSwitch = body.querySelector(".toggle-switch"),
 modeText = body.querySelector(".mode-text");
 
+const navLink = document.querySelectorAll('.nav_link')
+navLink.forEach(n => n.classList.remove('active'))
+function linkAction(){
+  navLink.forEach(n => n.classList.remove('active'))
+  this.classList.add('active')
+
+  const navMenu = document.getElementById('menu')
+  navMenu.classList.remove('show')
+}
+
+navLink.forEach(n => n.addEventListener('click',linkAction))
 
 toggle.addEventListener("click" , () =>{
     sidebar.classList.toggle("close");
