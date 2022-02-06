@@ -391,7 +391,10 @@ span{
     transform: translateX(-50%);
     transition: bottom 1s, left 1s;
 }
-
+/*.girl{
+    height:10px;
+}
+*/
 .images:hover .shape{
     bottom: 40px;
 }
@@ -407,7 +410,7 @@ span{
     .images img{
         height: 300px;
         left: 0;
-        padding-right: 10px;
+        padding-right: 30px;
     }
 }
 
